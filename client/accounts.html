@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Game time</title>
+    <link rel="stylesheet" href="./styles/accounts.css">
+    <script src="./scripts/accounts.js" defer></script>
+    <script src="./scripts/board.js" defer></script>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript">
+        let socket = io();
+
+        socket.on('connect', () => {
+            console.log("Connected to server");
+        })
+
+        socket.on('disconnect', () => {
+            console.log("Disconnected to server");
+        })
+    </script>
+
+</head>
+
+<body>
+    <div class="headers">
+
+        <div>
+            Welcome ☺
+        </div>
+        <br>
+        <div>
+            Head 2 Head Chess
+        </div>
+    </div>
+    <nav class="login-wrapper">
+        <button id="btnLoginNav" userName="login-btn">Login</button>
+        <button id="btnRegisterNav" userName="register-btn">Register</button>
+    </nav>
+
+    <section id="wrapper">
+
+        <header userName="header">
+            <br>
+
+            <div class="login ">
+
+
+                <input id="login-username" placeholder="Username" name="userName" /><br>
+                <input type="password" id="login-password" placeholder="Password" name="password" />
+                <button id="loginNextPage" type="submit">Log in</button>
+
+
+            </div>
+
+
+            <div class="register  hidden">
+
+
+
+                <input id="register-username" placeholder="Username" name="userName" />
+
+                <input type="password" id="register-password" placeholder="Password" name="password" />
+
+                <input type="password" id="register-confirm-password" placeholder="Confirm password" name="confirm" />
+                <span userName='psw-message'></span>
+                <button id="register-new-user" type="submit">Register</button>
+
+
+            </div>
+
+        </header>
+    </section>
+
+
+</body>
+
+</html>

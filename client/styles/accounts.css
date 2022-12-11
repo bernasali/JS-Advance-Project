@@ -1,0 +1,128 @@
+.wrapper {
+    /* padding: 8px 20px;*/
+    /*margin-top: 70px;*/
+    position: fixed;
+}
+
+.login-wrapper {
+    margin-top: 100px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#login-btn {
+    padding: 20px;
+    margin-right: 10px;
+    /*  */
+}
+
+#register-btn {
+    padding: 20px;
+    margin-left: 10px;
+}
+
+body {
+    background: linear-gradient(0.25turn, #eceff0, #73776f, #242220);
+}
+
+#input-container {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+input {
+    border: 0;
+    border-bottom: 1px solid #555;
+    background: transparent;
+    width: 100%;
+    padding: 8px 0 5px 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+::placeholder {
+    text-align: center;
+    color: black;
+}
+
+h1 {
+    /* background: white;
+    width: 750px;
+    height: 110px;*/
+    padding-bottom: 10px;
+    position: fixed;
+    top: 0;
+    margin-left: 50%;
+    color: rgb(2, 34, 38);
+}
+
+.headers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 35px;
+}
+
+.hidden {
+    display: none;
+}
+
+#btnLoginNav {
+    background-color: black;
+    border-radius: 6px;
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    height: 10px;
+    line-height: 10px;
+    padding: 20px;
+    width: 100px;
+    border: 0;
+    margin-left: 30px;
+}
+
+#btnRegisterNav {
+    background-color: black;
+    border-radius: 6px;
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    height: 10px;
+    line-height: 10px;
+    padding: 20px;
+    width: 100px;
+    border: 0;
+    margin-left: 30px;
+}
+
+#loginNextPage {
+    background-color: black;
+    border-radius: 6px;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    height: 10px;
+    line-height: 10px;
+    width: 100px;
+    border: 0;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 45%;
+}
+
+#log-in {
+    margin-left: 200px;
+}
+
+#register-new-user {
+    margin-left: 200px;
+}
+
+.register {
+    margin-top: 0px;
+}
+
+#loginNextPage {
+    display: flex;
+    justify-content: center;
+}
