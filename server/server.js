@@ -3,10 +3,24 @@ const socketIO = require('socket.io');
 const port = 8080;
 const express = require('express');
 const app = express();
-const server = http.createServer(app);
+
 const path = require('path');
 const publicPath = path.join(__dirname, '/../client');
+
+const server = http.createServer(app);
+
+/*
+const server = http.createServer((req,res) => {
+
+   // req.on('end', () =>{
+   //     console.log('Server completed');
+   //     res.end();
+   // })
+});
+*/
 const io = socketIO(server);
+
+
 
 app.use(express.static(publicPath));
 io.on('connection', (socket) => {

@@ -1,0 +1,21 @@
+
+
+.highlight{
+     border: 5px solid rgb(57, 222, 57);
+}
+
+#give-up{
+     width: 7em;
+     height: 4em;
+}
+#winner{
+     position: relative;
+     left: 35%;
+     top: 40%;
+     transform: translate(-50%, -50%);
+     padding: 10px;
+     border: none;
+     font-size: 40px;
+     color: red;
+}
+
